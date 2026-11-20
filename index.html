@@ -6,25 +6,25 @@
   <title>Portfolio | Lara Farren</title>
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome para íconos de redes sociales -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Great Vibes (cursiva), Playfair Display (editorial) y Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- BARRA DE NAVEGACIÓN (NAVBAR) -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#inicio">LARA FARREN</a>
+      <a class="navbar-brand brand-script" href="#inicio">Lara Farren</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav text-uppercase fw-semibold">
+        <ul class="navbar-nav fw-medium">
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
@@ -39,168 +39,202 @@
     </div>
   </nav>
 
-  <!-- ENCABEZADO (HEADER) -->
-  <header id="inicio" class="hero-section text-center text-white">
+  <!-- ENCABEZADO (HERO) -->
+  <header id="inicio" class="hero-section text-center">
     <div class="container d-flex flex-column align-items-center">
-      <!-- Ilustración/Avatar minimalista en tonos rosa -->
-      <div class="avatar-wrapper mb-4">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="avatar-img" role="img" aria-label="Avatar de Lara Farren">
-          <circle cx="100" cy="100" r="100" fill="#fce4ec"/>
-          <!-- Cabello -->
-          <path d="M55 95 C55 55, 145 55, 145 95 L150 155 C150 165, 50 165, 50 155 Z" fill="#880e4f"/>
-          <!-- Cuello y remera -->
-          <rect x="86" y="122" width="28" height="24" rx="8" fill="#f8bbd0"/>
-          <path d="M45 185 C45 152, 155 152, 155 185 Z" fill="#ec407a"/>
-          <!-- Rostro -->
-          <circle cx="100" cy="96" r="34" fill="#ffe0e9"/>
-          <!-- Flequillo / detalle cabello -->
-          <path d="M66 92 C68 62, 132 62, 134 92 C122 76, 78 76, 66 92 Z" fill="#880e4f"/>
-          <!-- Ojos y sonrisa minimalista -->
-          <circle cx="88" cy="96" r="3.5" fill="#4a154b"/>
-          <circle cx="112" cy="96" r="3.5" fill="#4a154b"/>
-          <path d="M91 109 Q100 117 109 109" stroke="#ad1457" stroke-width="3" fill="none" stroke-linecap="round"/>
-        </svg>
+      <div class="profile-frame mb-4">
+        <img src="perfil.jpg.jpeg" alt="Lara Farren" class="profile-photo">
       </div>
-      <h1 class="display-4 fw-bold text-uppercase mb-2">Lara Farren</h1>
-      <hr class="star-divider">
-      <p class="lead fw-normal mb-0">Estudiante</p>
+      <span class="hero-subtitle text-uppercase mb-1">Portfolio de Computación</span>
+      <h1 class="hero-title mb-2">Lara Farren</h1>
+      <div class="floral-divider my-2">
+        <span></span><i class="fa-solid fa-heart"></i><span></span>
+      </div>
+      <p class="hero-role mb-0">Estudiante &bull; 5° Año St. Brendan's College</p>
     </div>
   </header>
 
   <!-- SECCIÓN PORTFOLIO -->
   <section id="portfolio" class="portfolio-section py-5">
     <div class="container">
-      <h2 class="text-center text-uppercase fw-bold section-title">Portfolio</h2>
-      <hr class="star-divider dark-divider mb-5">
+      <div class="text-center mb-5">
+        <span class="section-kicker">Mis Trabajos del Año</span>
+        <h2 class="section-script-title">Portfolio</h2>
+        <div class="floral-divider dark-divider">
+          <span></span><i class="fa-solid fa-sparkles"></i><span></span>
+        </div>
+      </div>
 
-      <!-- Segundo Cuatrimestre: JavaScript -->
-      <h3 class="h5 text-uppercase fw-bold text-muted mb-4">Proyectos JavaScript &amp; DOM</h3>
+      <!-- ==================== PRIMER CUATRIMESTRE (U3 A U6) ==================== -->
+      <div class="semester-banner mb-4">
+        <span class="semester-tag">Primer Cuatrimestre</span>
+        <h3 class="semester-heading">HTML, CSS &amp; Diseño Responsive <small class="text-muted fw-normal">(Unidades 3 a 6)</small></h3>
+      </div>
+
       <div class="row g-4 mb-5">
-        <!-- Proyecto 1: Color Game (U14) -->
-        <div class="col-md-4">
+        <!-- Unidad 3: Landing Page -->
+        <div class="col-md-6 col-lg-3">
           <div class="card portfolio-card h-100">
-            <div class="project-preview bg-pink-1">
-              <span>RGB(240, 14, 128)</span>
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Diseño web Landing Page">
+              <span class="unit-pill">Unidad 3</span>
             </div>
             <div class="card-body d-flex flex-column">
-              <span class="badge badge-unit align-self-start mb-2">Unidad 14</span>
-              <h4 class="card-title h5 fw-bold">The Great Color Game</h4>
-              <p class="card-text text-muted small flex-grow-1">Juego interactivo para adivinar colores RGB con niveles Easy y Hard.</p>
-              <a href="https://larafarren.github.io/color-game-2/" target="_blank" rel="noopener noreferrer" class="btn btn-pink mt-2">Ver proyecto</a>
+              <h4 class="card-title">Landing Page</h4>
+              <p class="card-text flex-grow-1">Primera página de aterrizaje estructurada con HTML semántico, paleta cromática y tipografías en CSS.</p>
+              <a href="https://larafarren.github.io/landing-page/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 2: Torneo Algorítmico (U9) -->
-        <div class="col-md-4">
+        <!-- Unidad 4 -->
+        <div class="col-md-6 col-lg-3">
           <div class="card portfolio-card h-100">
-            <div class="project-preview bg-pink-2">
-              <span>✊ ✋ ✌️</span>
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Código HTML y CSS">
+              <span class="unit-pill">Unidad 4</span>
             </div>
             <div class="card-body d-flex flex-column">
-              <span class="badge badge-unit align-self-start mb-2">Unidad 9</span>
-              <h4 class="card-title h5 fw-bold">Torneo Algorítmico</h4>
-              <p class="card-text text-muted small flex-grow-1">Simulador interactivo de Piedra, Papel o Tijera desarrollado con JavaScript.</p>
-              <a href="https://larafarren.github.io/torneo-algoritmico/" target="_blank" rel="noopener noreferrer" class="btn btn-pink mt-2">Ver proyecto</a>
+              <h4 class="card-title">Maquetado Web</h4>
+              <p class="card-text flex-grow-1">Desarrollo de estructura web con cajas, posicionamiento, selectores avanzados y estilos en CSS.</p>
+              <a href="https://larafarren.github.io/unidad-4/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 3: Desafío Jubilación (U8) -->
-        <div class="col-md-4">
+        <!-- Unidad 5: Galería Responsive -->
+        <div class="col-md-6 col-lg-3">
           <div class="card portfolio-card h-100">
-            <div class="project-preview bg-pink-3">
-              <span>JS Condicionales</span>
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Galería fotográfica">
+              <span class="unit-pill">Unidad 5</span>
             </div>
             <div class="card-body d-flex flex-column">
-              <span class="badge badge-unit align-self-start mb-2">Unidad 8</span>
-              <h4 class="card-title h5 fw-bold">Desafío Jubilación</h4>
-              <p class="card-text text-muted small flex-grow-1">Aplicación web con lógica condicional para evaluar requisitos de edad.</p>
-              <a href="https://larafarren.github.io/desafio-jubilacion/" target="_blank" rel="noopener noreferrer" class="btn btn-pink mt-2">Ver proyecto</a>
+              <h4 class="card-title">Galería Responsive</h4>
+              <p class="card-text flex-grow-1">Grilla fotográfica adaptable a celulares, tablets y computadoras usando CSS Grid y media queries.</p>
+              <a href="https://larafarren.github.io/galeria-responsive/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unidad 6: Primer Portfolio -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card portfolio-card h-100">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Primer Portfolio Bootstrap">
+              <span class="unit-pill">Unidad 6</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title">Portfolio (Parte I)</h4>
+              <p class="card-text flex-grow-1">Primera versión del portfolio personal maquetada con componentes de Bootstrap y diseño responsive.</p>
+              <a href="https://larafarren.github.io/portfolio-Lara/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Fila 2: Desafío Calculadoras + Proyectos HTML/CSS -->
-      <h3 class="h5 text-uppercase fw-bold text-muted mb-4">Calculadoras &amp; Maquetado Web (HTML / CSS)</h3>
+      <!-- ==================== SEGUNDO CUATRIMESTRE (U7 A U14) ==================== -->
+      <div class="semester-banner mb-4 pt-3">
+        <span class="semester-tag">Segundo Cuatrimestre</span>
+        <h3 class="semester-heading">Programación en JavaScript &amp; DOM <small class="text-muted fw-normal">(Unidades 7 a 14)</small></h3>
+      </div>
+
       <div class="row g-4">
-        <!-- Proyecto 4: Desafío Calculadoras (U7) -->
-        <div class="col-md-4">
+        <!-- Unidad 7: Desafío Calculadoras -->
+        <div class="col-md-6 col-lg-3">
           <div class="card portfolio-card h-100">
-            <div class="project-preview bg-pink-2">
-              <span>+ − × ÷</span>
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Calculadora matemática">
+              <span class="unit-pill">Unidad 7</span>
             </div>
             <div class="card-body d-flex flex-column">
-              <span class="badge badge-unit align-self-start mb-2">Unidad 7</span>
-              <h4 class="card-title h5 fw-bold">Desafío Calculadoras</h4>
-              <p class="card-text text-muted small flex-grow-1">Herramientas de cálculo dinámico utilizando funciones en JavaScript.</p>
-              <a href="https://larafarren.github.io/desafio-calculadoras/" target="_blank" rel="noopener noreferrer" class="btn btn-pink mt-2">Ver proyecto</a>
+              <h4 class="card-title">Desafío Calculadoras</h4>
+              <p class="card-text flex-grow-1">Aplicación interactiva para resolver operaciones matemáticas utilizando variables, parámetros y funciones.</p>
+              <a href="https://larafarren.github.io/desafio-calculadoras/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 5: Galería Responsive (U5) -->
-        <div class="col-md-4">
+        <!-- Unidad 8: Desafío Jubilación -->
+        <div class="col-md-6 col-lg-3">
           <div class="card portfolio-card h-100">
-            <div class="project-preview bg-pink-3">
-              <span>CSS Grid</span>
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Calendario y planificación">
+              <span class="unit-pill">Unidad 8</span>
             </div>
             <div class="card-body d-flex flex-column">
-              <span class="badge badge-unit align-self-start mb-2">Unidad 5</span>
-              <h4 class="card-title h5 fw-bold">Galería Responsive</h4>
-              <p class="card-text text-muted small flex-grow-1">Grilla fotográfica adaptativa diseñada con CSS Grid y media queries.</p>
-              <a href="https://larafarren.github.io/galeria-responsive/" target="_blank" rel="noopener noreferrer" class="btn btn-pink mt-2">Ver proyecto</a>
+              <h4 class="card-title">Desafío Jubilación</h4>
+              <p class="card-text flex-grow-1">Programa con estructuras condicionales (if/else) para verificar requisitos de edad y aportes.</p>
+              <a href="https://larafarren.github.io/desafio-jubilacion/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 6: Unidad 4 -->
-        <div class="col-md-4">
+        <!-- Unidad 9: Torneo Algorítmico -->
+        <div class="col-md-6 col-lg-3">
           <div class="card portfolio-card h-100">
-            <div class="project-preview bg-pink-1">
-              <span>HTML &amp; CSS</span>
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Juego y algoritmos">
+              <span class="unit-pill">Unidad 9</span>
             </div>
             <div class="card-body d-flex flex-column">
-              <span class="badge badge-unit align-self-start mb-2">Unidad 4</span>
-              <h4 class="card-title h5 fw-bold">Proyecto Unidad 4</h4>
-              <p class="card-text text-muted small flex-grow-1">Práctica de estructuración semántica y estilos personalizados en CSS.</p>
-              <a href="https://larafarren.github.io/unidad-4/" target="_blank" rel="noopener noreferrer" class="btn btn-pink mt-2">Ver proyecto</a>
+              <h4 class="card-title">Torneo Algorítmico</h4>
+              <p class="card-text flex-grow-1">Simulador interactivo de Piedra, Papel o Tijera con lógica aleatoria, puntaje y manipulación del DOM.</p>
+              <a href="https://larafarren.github.io/torneo-algoritmico/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 7: Landing Page (U3) -->
-        <div class="col-md-4">
+        <!-- Unidad 14: The Great Color Game -->
+        <div class="col-md-6 col-lg-3">
           <div class="card portfolio-card h-100">
-            <div class="project-preview bg-pink-3">
-              <span>Landing Page</span>
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Paleta de colores RGB">
+              <span class="unit-pill">Unidad 14</span>
             </div>
             <div class="card-body d-flex flex-column">
-              <span class="badge badge-unit align-self-start mb-2">Unidad 3</span>
-              <h4 class="card-title h5 fw-bold">Landing Page</h4>
-              <p class="card-text text-muted small flex-grow-1">Primer diseño de página de aterrizaje con tipografías y layout en CSS.</p>
-              <a href="https://larafarren.github.io/landing-page/" target="_blank" rel="noopener noreferrer" class="btn btn-pink mt-2">Ver proyecto</a>
+              <h4 class="card-title">The Great Color Game</h4>
+              <p class="card-text flex-grow-1">Juego de adivinanza de colores RGB con eventos, arreglos dinámicos y modos de dificultad Easy y Hard.</p>
+              <a href="https://larafarren.github.io/color-game-2/" target="_blank" rel="noopener noreferrer" class="btn btn-rose w-100 mt-2">
+                Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- SECCIÓN ACERCA DE MÍ -->
-  <section id="acerca" class="about-section text-white py-5">
+  <section id="acerca" class="about-section py-5">
     <div class="container">
-      <h2 class="text-center text-uppercase fw-bold">Acerca de mí</h2>
-      <hr class="star-divider mb-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <p class="lead mb-0">
-            Soy Lara Farren, tengo 17 años y soy estudiante de 5° año del St. Brendan's College.
-            Este portfolio reúne los proyectos de desarrollo web que realicé durante el curso de Computación,
-            aplicando HTML, CSS, Bootstrap y JavaScript para crear sitios interactivos y adaptables a distintos dispositivos.
-          </p>
+      <div class="about-card mx-auto text-center">
+        <span class="section-kicker text-white-50">Sobre mí</span>
+        <h2 class="section-script-title text-white mb-2">Acerca de mí</h2>
+        <div class="floral-divider my-3">
+          <span></span><i class="fa-solid fa-heart"></i><span></span>
         </div>
+        <p class="about-text mb-0">
+          Soy <strong>Lara Farren</strong>, tengo 17 años y soy estudiante de 5° año del <strong>St. Brendan's College</strong>.
+          Este portfolio reúne mi recorrido durante el año en la materia Computación, desde mis primeras páginas diseñadas
+          con HTML, CSS y Bootstrap en el primer cuatrimestre hasta el desarrollo de aplicaciones y juegos interactivos con
+          JavaScript en el segundo cuatrimestre.
+        </p>
       </div>
     </div>
   </section>
@@ -208,28 +242,34 @@
   <!-- SECCIÓN CONTACTO -->
   <section id="contacto" class="contact-section py-5">
     <div class="container">
-      <h2 class="text-center text-uppercase fw-bold section-title">Contacto</h2>
-      <hr class="star-divider dark-divider mb-5">
+      <div class="text-center mb-5">
+        <span class="section-kicker">Escribime</span>
+        <h2 class="section-script-title">Contacto</h2>
+        <div class="floral-divider dark-divider">
+          <span></span><i class="fa-regular fa-envelope"></i><span></span>
+        </div>
+      </div>
+
       <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <form>
+        <div class="col-lg-6">
+          <form class="contact-form-box">
             <div class="mb-3">
-              <label for="nombre" class="form-label fw-semibold">Nombre</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label fw-semibold">Email</label>
+              <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
             </div>
             <div class="mb-3">
-              <label for="telefono" class="form-label fw-semibold">Teléfono</label>
-              <input type="tel" class="form-control" id="telefono" placeholder="Tu número de teléfono">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Tu número de contacto">
             </div>
             <div class="mb-4">
-              <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu mensaje acá..." required></textarea>
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Dejame tu comentario o consulta..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-pink btn-lg px-4">Enviar</button>
+            <button type="submit" class="btn btn-rose btn-lg w-100">Enviar mensaje</button>
           </form>
         </div>
       </div>
@@ -239,13 +279,13 @@
   <!-- FOOTER Y COPYRIGHT -->
   <footer class="footer-section text-white text-center pt-5 pb-4">
     <div class="container">
-      <div class="row gy-4 mb-4">
+      <div class="row gy-4 mb-4 align-items-center">
         <div class="col-md-6">
-          <h3 class="h5 text-uppercase fw-bold mb-3">Ubicación</h3>
-          <p class="mb-0">Buenos Aires, Argentina<br>St. Brendan's College</p>
+          <h3 class="footer-script mb-2">Lara Farren</h3>
+          <p class="mb-0 text-white-50">Buenos Aires, Argentina &bull; St. Brendan's College</p>
         </div>
         <div class="col-md-6">
-          <h3 class="h5 text-uppercase fw-bold mb-3">En la web</h3>
+          <p class="text-uppercase small fw-semibold letter-spacing mb-3">Mis redes y proyectos</p>
           <div class="d-flex justify-content-center gap-3">
             <a href="https://github.com/larafarren" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
               <i class="fab fa-github"></i>
@@ -263,12 +303,12 @@
         </div>
       </div>
     </div>
-    <div class="copyright-bar pt-3 border-top border-secondary">
-      <small>Copyright &copy; Lara Farren 2026 — Todos los derechos reservados.</small>
+    <div class="copyright-bar pt-3">
+      <small>Copyright &copy; Lara Farren 2026 &mdash; Todos los derechos reservados.</small>
     </div>
   </footer>
 
-  <!-- Bootstrap 5 JS Bundle (necesario para el menú hamburguesa) -->
+  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
